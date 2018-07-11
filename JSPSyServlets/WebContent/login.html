@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Web</title>
+
+<!-- Definiciones JavaScript, notese a invocacion en body onload-->
+<script type="text/javascript" lang="JavaScript">
+	
+	function carga(){
+		document.getElementById("usuario").focus();
+	}
+	
+	function valideDatos(){
+		
+	}
+</script>
+	
+
+</head>
+<body onload="carga();">
+
+
+<form action = "Loginweb.jr" method = "POST" onsubmit="return valideDatos();">
+<!-- GET: Desde login.html invoca loginweb.jr, mandandole parametros explicitos "?parametro1=a&parametro2=b" etc-->
+<!-- POST: hace lo mismo pero los parametros van ocultos -->
+
+<table align = "center">
+	<tr>
+		<td colspan="2" style = "font-weight: bold">Ingresa tu usuario y contraseña</td>
+	</tr>
+
+	<tr>
+		<td>Usuario: </td>
+		<td><input type = "text" name = "usuario" id = "usuario"></td>
+	</tr>
+	
+	<tr>
+		<td>Password: </td>
+		<td><input type = "password" name = "usuario" id = "usuario"></td>
+	</tr>
+	
+	<tr>
+		<td><input type = "button" value = "Cancelar"></td>
+		<td><input type="submit" value = "Aceptar"></td>
+	</tr>
+</table>
+
+</form>
+
+</body>
+</html>
